@@ -1,0 +1,198 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+body{
+  font-family:'Poppins', sans-serif;
+  background:#000;
+  color:#fff;
+}
+
+/* ===== NAVBAR ===== */
+
+.navbar{
+  position:fixed;
+  width:100%;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:20px 10%;
+  background:rgba(0,0,0,0.7);
+  backdrop-filter:blur(10px);
+  z-index:1000;
+}
+
+.logo{
+  font-family:'Bebas Neue', sans-serif;
+  letter-spacing:3px;
+  font-size:24px;
+  color:#0094FF;
+}
+
+.navbar a{
+  margin-left:20px;
+  text-decoration:none;
+  color:#fff;
+  transition:0.3s;
+}
+
+.navbar a:hover{
+  color:#0094FF;
+}
+
+/* ===== HERO ===== */
+
+.hero{
+  height:100vh;
+  background-image:
+  linear-gradient(to bottom, rgba(0,0,0,0.4), black),
+  url("oi/barber.jpg");
+  background-size:cover;
+  background-position:center;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+  padding:0 20px;
+}
+
+.topo{
+  background:rgba(0,0,0,0.4);
+  padding:30px;
+  border-radius:10px;
+  backdrop-filter:blur(8px);
+}
+
+.topo h1{
+  font-family:'Bebas Neue', sans-serif;
+  font-size:48px;
+  letter-spacing:4px;
+  text-shadow:0 0 15px #0094FF;
+}
+
+.topo p{
+  margin:15px 0;
+}
+
+/* ===== BOTÃO ===== */
+
+.btn{
+  display:inline-block;
+  padding:12px 30px;
+  background:#0094FF;
+  color:#fff;
+  border-radius:30px;
+  text-decoration:none;
+  transition:0.3s;
+}
+
+.btn:hover{
+  background:#fff;
+  color:#000;
+}
+
+/* ===== SERVIÇOS ===== */
+
+.servicos{
+  padding:100px 10%;
+  text-align:center;
+}
+
+.cards{
+  margin-top:50px;
+  display:flex;
+  justify-content:center;
+  gap:30px;
+  flex-wrap:wrap;
+}
+
+.card{
+  background:#111;
+  padding:30px;
+  width:280px;
+  border-radius:10px;
+  border:1px solid #222;
+  transition:0.3s;
+}
+
+.card:hover{
+  transform:translateY(-10px);
+  border-color:#0094FF;
+}
+
+.card span{
+  display:block;
+  margin-top:15px;
+  color:#0094FF;
+  font-weight:bold;
+}
+
+/* ===== ANTES DEPOIS ===== */
+
+.antes-depois{
+  padding:100px 10%;
+  text-align:center;
+  background:#0a0a0a;
+}
+
+.galeria{
+  margin-top:40px;
+  display:flex;
+  justify-content:center;
+  gap:30px;
+}
+
+.foto{
+  width:250px;
+  height:250px;
+  background:#222;
+  border-radius:10px;
+}
+
+/* ===== SOBRE ===== */
+
+.sobre{
+  padding:100px 10%;
+  text-align:center;
+}
+
+.sobre ul{
+  margin-top:40px;
+  list-style:none;
+  line-height:2;
+}
+
+/* ===== CONTATO ===== */
+
+.contato{
+  padding:100px 10%;
+  text-align:center;
+  background:#0a0a0a;
+}
+
+footer{
+  text-align:center;
+  padding:20px;
+  background:#050505;
+  font-size:14px;
+  opacity:0.6;
+}
+
+/* ===== RESPONSIVO ===== */
+
+@media(max-width:768px){
+  .navbar nav{
+    display:none;
+  }
+
+  .topo h1{
+    font-size:32px;
+  }
+
+  .galeria{
+    flex-direction:column;
+    align-items:center;
+  }
+}
